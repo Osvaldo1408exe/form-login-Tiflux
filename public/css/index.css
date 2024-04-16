@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+    font-weight: 400;
+    
+}
+.bg-esquerdo {
+    background-color: #F3F4F7;
+    height: 100vh; 
+    width: 50%;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: -1;
+}
+
+.bg-direito {
+    background-color: #ffffff; 
+    height: 100vh;
+    width: 50%; 
+    position: fixed; 
+    right: 0; 
+    top: 0; 
+    z-index: -1; 
+}
+
+
+
+h1,p{
+    color: #262626;
+}
+
+a,button{
+    color:  #0CC4B6;
+    text-decoration: none;
+}
+.primary-color{
+    background-color:  #0CC4B6;
+    color: #ffffff;
+}
+
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-email {
+padding-left: 35px; 
+background-image: url('../img/mail.svg');
+background-repeat: no-repeat;
+background-position: 10px center; 
+}
+
+.icon-email:focus {
+background-image: url('../img/mail-focus.svg');
+}
+
+
+.icon-senha {
+padding-left: 35px; 
+background-image: url('../img/lock.svg');
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+
+.icon-senha:focus {
+background-image: url('../img/lock-focus.svg');
+}
+
+.forgot-password-link {
+display: inline-block;
+margin-left: 20px; 
+}
+
+
+@media (max-width: 1200px) {
+    .side-img{
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 928px) {
+    .side-img{
+        display: none;
+    }
+    .bg-esquerdo{
+        display: none;
+    }
+    
+    body{
+        margin-right: 180px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .side-img{
+        display: none;
+    }
+    .bg-esquerdo{
+        display: none;
+    }
+    
+    body{
+        margin-left: 180px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3{
+        font-size: 17px;
+    }
+    
+}
+
